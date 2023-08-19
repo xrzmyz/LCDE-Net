@@ -17,4 +17,4 @@ The network consists of two modules, one is a locally enhanced global feature ex
 Then, you can do the following to train the dataset.  
 * Create a folder `Data\S3DIS` or `Data\Semantic3D`, convert the point cloud file into a ply file, for example, `area1. ply`, place the point cloud file in the corresponding folder, and then run `train_S3DIS.py` or `train_Semantic3D.py` from the two main folders to train;  
 * During testing, run the `test_models.py` file in the corresponding folder to obtain the test results;  
-* If you want to train other datasets, you can refer to the `S3DIS.py` or `Semantic3D`. py file for corresponding modifications.
+* If you want to train other datasets, you can refer to the `S3DIS.py` or `Semantic3D.py` file for corresponding modifications.
