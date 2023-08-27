@@ -168,16 +168,16 @@ class S3DISConfig(Config):
     max_epoch = 500
 
     # Learning rate management
-    learning_rate = 1e-2
+    learning_rate = 1e-3
     momentum = 0.98
-    lr_decays = {i: 0.1 ** (1 / 150) for i in range(1, max_epoch)}
+    lr_decays = {i: 0.9 + 0.1 * (i % 5 != 0) for i in range(1, max_epoch)}
     grad_clip_norm = 100.0
 
     # Number of batch (decrease to reduce memory cost, but it should remain > 3 for stability)  批处理数（减少以减少内存成本，但应保持>3以保持稳定性）
     batch_num = 6
 
     # Number of steps per epochs
-    epoch_steps = 380
+    epoch_steps = 400
 
     # Number of validation examples per epoch
     validation_size = 50
