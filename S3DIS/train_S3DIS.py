@@ -114,7 +114,7 @@ class S3DISConfig(Config):
     #                 'unary']
 
     ###################
-    # KPConv parameters
+    # Net parameters
     ###################
 
     # Number of kernel points
